@@ -7,7 +7,7 @@ import IRoute from "../interfaces/IRoute";
 
 import Login from '../pages/Login';
 import Register from '../pages/Register';
-import Main from 'pages/Main';
+import Main from '../pages/Main';
 
 export const publicRoutes : Array<IRoute> = [
     {path: LOGIN_ROUTE, element: <Login/>, title: "Авторизация"},
