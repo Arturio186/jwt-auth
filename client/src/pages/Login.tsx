@@ -1,4 +1,6 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
+import { REGISTER_ROUTE } from '#utils/consts';
 
 const Login : React.FC = () => {
     const Submit = (event : React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
@@ -22,6 +24,7 @@ const Login : React.FC = () => {
                 
                 <button onClick={(event) => Submit(event)}>Войти</button>
             </form>
+            <NavLink to={REGISTER_ROUTE}>Зарегистрироваться</NavLink>
         </>
     )
 }

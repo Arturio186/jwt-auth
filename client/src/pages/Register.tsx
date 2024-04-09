@@ -1,9 +1,10 @@
 import React from 'react';
+import { NavLink } from "react-router-dom";
+import { LOGIN_ROUTE } from '#utils/consts';
 
 const Register : React.FC = () => {
     const Submit = (event : React.MouseEvent<HTMLButtonElement, MouseEvent>) => {
         event.preventDefault()
-
     }
     
     return (
@@ -20,8 +21,9 @@ const Register : React.FC = () => {
                     <input type="password" id="password" name="password"/>
                 </div>
                 
-                <button onClick={(event) => Submit(event)}>Войти</button>
+                <button onClick={(event) => Submit(event)}>Зарегистрироваться</button>
             </form>
+            <NavLink to={LOGIN_ROUTE}>Войти</NavLink>
         </>
     )
 }
